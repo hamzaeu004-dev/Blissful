@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AHA/BHA Toner — Blissful Beauty</title>
+  <meta name="description"
+    content="Gentle exfoliating toner with 5% Glycolic Acid & 1% Salicylic Acid. Unclogs pores & brightens skin." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="product.css" />
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <span>🎁 Free Shipping on Orders Above Rs. 2,000</span>
+      <span>•</span>
+      <span>💵 COD Available All Over Pakistan</span>
+      <span>•</span>
+      <span>🔥 FLAT 15% OFF — Limited Time</span>
+      <span>•</span>
+      <span>🎁 Free Shipping on Orders Above Rs. 2,000</span>
+      <span>•</span>
+      <span>💵 COD Available All Over Pakistan</span>
+      <span>•</span>
+      <span>🔥 FLAT 15% OFF — Limited Time</span>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Blissful</a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop All</a>
+
+        <!-- SHOP BY CATEGORY -->
+        <div class="nav-dropdown">
+          <a href="products.html" class="dropdown-trigger">
+            Shop By Category <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="cleansers.html"><i class="fa-solid fa-soap"></i> Cleansers</a>
+            <a href="toners.html"><i class="fa-solid fa-droplet"></i> Toners</a>
+            <a href="serums.html"><i class="fa-solid fa-flask"></i> Serums</a>
+            <a href="moisturizers.html"><i class="fa-solid fa-jar"></i> Moisturizers</a>
+            <a href="sunscreens.html"><i class="fa-solid fa-sun"></i> Sunscreens</a>
+            <a href="bundles.html"><i class="fa-solid fa-gift"></i> Bundles</a>
+          </div>
+        </div>
+
+        <!-- SHOP BY SKIN CONCERN -->
+        <div class="nav-dropdown">
+          <a href="#" class="dropdown-trigger">
+            Shop By Skin Concern <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu concern-menu">
+            <a href="dehydration.html">Dehydration & Dryness</a>
+            <a href="dullness.html">Dullness & Uneven Tone</a>
+            <a href="breakouts.html">Breakouts & Acne</a>
+            <a href="texture.html">Texture, Pores & Oily Skin</a>
+            <a href="dark-spots.html">Dark Spot & Discoloration</a>
+            <a href="aging.html">Healthy Aging</a>
+            <a href="makeup-removing.html">Make Up Removing & Deep Cleaning</a>
+            <a href="sun-protection.html">Sun Protection</a>
+          </div>
+        </div>
+
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="nav-icons">
+        <button class="icon-btn search-trigger" aria-label="Search"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn user-trigger" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+        <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <a href="products.html">Shop</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <a href="toners.html">Toners</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span>AHA/BHA Toner</span>
+    </div>
+  </div>
+
+  <!-- ⭐ PRODUCT MAIN SECTION -->
+  <section class="product-main">
+    <div class="container product-main-grid">
+
+      <!-- LEFT: GALLERY -->
+      <div class="product-gallery">
+        <div class="gallery-thumbs">
+          <button class="thumb active" data-img="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800&q=80">
+            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=150&q=80" alt="View 1" />
+          </button>
+          <button class="thumb" data-img="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=800&q=80">
+            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=150&q=80" alt="View 2" />
+          </button>
+          <button class="thumb" data-img="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=80">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=150&q=80" alt="View 3" />
+          </button>
+          <button class="thumb" data-img="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=800&q=80">
+            <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=150&q=80" alt="View 4" />
+          </button>
+        </div>
+
+        <div class="gallery-main">
+          <span class="badge sale">-15%</span>
+          <button class="wishlist-btn wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+          <img id="mainImage" src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800&q=80"
+            alt="AHA/BHA Toner" />
+        </div>
+      </div>
+
+      <!-- RIGHT: INFO -->
+      <div class="product-info-main">
+
+        <p class="product-brand">Blissful Beauty</p>
+        <h1 class="product-title">AHA/BHA Toner</h1>
+
+        <div class="product-rating">
+          <span class="stars">★★★★★</span>
+          <span class="rating-count">4.8 (28 reviews)</span>
+          <span class="verified">✓ Verified</span>
+        </div>
+
+        <p class="product-short-desc">
+          Reveal smoother, clearer, and more radiant skin with our AHA BHA Toner. Powered by 5% Glycolic Acid (AHA) and
+          1% Salicylic Acid (BHA), this gentle exfoliating toner helps to unclog pores and slough away dead skin cells.
+        </p>
+
+        <!-- PRICE -->
+        <div class="product-price-box">
+          <span class="price-new">Rs. 1,657</span>
+          <span class="price-old">Rs. 1,950</span>
+          <span class="save-badge">Save 15%</span>
+        </div>
+
+        <p class="tax-note">Inclusive of all taxes • Free shipping above Rs. 2,000</p>
+
+        <!-- SIZE / VARIANT -->
+        <div class="product-variant">
+          <label>Size:</label>
+          <div class="variant-options">
+            <button class="variant-btn active">100 ml</button>
+            <button class="variant-btn">200 ml</button>
+          </div>
+        </div>
+
+        <!-- QUANTITY + ADD TO CART -->
+        <div class="product-actions">
+          <div class="qty-selector">
+            <button class="qty-btn" data-action="minus">−</button>
+            <input type="text" value="1" id="qtyInput" readonly />
+            <button class="qty-btn" data-action="plus">+</button>
+          </div>
+          <button class="btn btn-primary add-to-cart-main" data-name="AHA/BHA Toner">
+            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+          </button>
+        </div>
+
+        <button class="btn buy-now-btn" data-name="AHA/BHA Toner">
+          ⚡ Buy It Now — COD Available
+        </button>
+
+        <!-- TRUST BADGES -->
+        <div class="product-trust">
+          <div class="trust-row">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+              <strong>Free Shipping</strong>
+              <span>On orders above Rs. 2,000</span>
+            </div>
+          </div>
+          <div class="trust-row">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            <div>
+              <strong>Cash on Delivery</strong>
+              <span>Available all over Pakistan</span>
+            </div>
+          </div>
+          <div class="trust-row">
+            <i class="fa-solid fa-rotate-left"></i>
+            <div>
+              <strong>7-Day Returns</strong>
+              <span>Easy & hassle-free</span>
+            </div>
+          </div>
+          <div class="trust-row">
+            <i class="fa-solid fa-star-and-crescent"></i>
+            <div>
+              <strong>100% Halal</strong>
+              <span>Certified & cruelty-free</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAYMENT METHODS -->
+        <div class="payment-icons">
+          <span>We accept:</span>
+          <i class="fa-solid fa-money-bill-wave"></i>
+          <i class="fa-solid fa-mobile-screen"></i>
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ⭐ PRODUCT TABS -->
+  <section class="product-tabs-section">
+    <div class="container">
+      <div class="tabs-header">
+        <button class="tab-btn active" data-tab="description">Description</button>
+        <button class="tab-btn" data-tab="ingredients">Key Ingredients</button>
+        <button class="tab-btn" data-tab="howto">How to Use</button>
+        <button class="tab-btn" data-tab="reviews">Reviews (28)</button>
+      </div>
+
+      <div class="tab-content active" id="tab-description">
+        <h3>About AHA/BHA Toner</h3>
+        <p>Reveal smoother, clearer, and more radiant skin with our AHA BHA Toner. Powered by 5% Glycolic Acid (AHA) and
+          1% Salicylic Acid (BHA), this gentle exfoliating toner helps to unclog pores and slough away dead skin cells,
+          revealing a brighter, more balanced complexion.</p>
+        <p>With regular use, it helps:</p>
+        <ul>
+          <li>✓ Unclog pores and reduce blackheads</li>
+          <li>✓ Even out skin tone</li>
+          <li>✓ Smooth rough texture</li>
+          <li>✓ Control excess oil</li>
+          <li>✓ Prep skin for serums & moisturizers</li>
+        </ul>
+        <p><strong>Suitable for:</strong> All skin types except extremely sensitive skin.</p>
+      </div>
+
+      <div class="tab-content" id="tab-ingredients">
+        <h3>Key Ingredients</h3>
+        <div class="ingredients-grid">
+          <div class="ingredient-card">
+            <h4>5% Glycolic Acid (AHA)</h4>
+            <p>Exfoliates dead skin cells & brightens complexion</p>
+          </div>
+          <div class="ingredient-card">
+            <h4>1% Salicylic Acid (BHA)</h4>
+            <p>Unclogs pores & controls excess oil</p>
+          </div>
+          <div class="ingredient-card">
+            <h4>Niacinamide</h4>
+            <p>Evens skin tone & strengthens barrier</p>
+          </div>
+          <div class="ingredient-card">
+            <h4>Aloe Vera</h4>
+            <p>Soothes & hydrates skin</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-howto">
+        <h3>How to Use</h3>
+        <ol class="how-to-list">
+          <li>
+            <span class="step-num">1</span>
+            <div>
+              <strong>Cleanse</strong>
+              <p>Wash your face with a gentle cleanser and pat dry.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <div>
+              <strong>Apply Toner</strong>
+              <p>Soak a cotton pad with toner and gently swipe across face, avoiding eye area.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <div>
+              <strong>Wait</strong>
+              <p>Let it absorb for 1-2 minutes before applying serum.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">4</span>
+            <div>
+              <strong>Moisturize</strong>
+              <p>Follow with serum and moisturizer. Use 2-3 times a week.</p>
+            </div>
+          </li>
+        </ol>
+        <p class="warning"><i class="fa-solid fa-triangle-exclamation"></i> <strong>Warning:</strong> Always use
+          sunscreen during the day when using AHA/BHA products.</p>
+      </div>
+
+      <div class="tab-content" id="tab-reviews">
+        <h3>Customer Reviews</h3>
+        <div class="reviews-summary">
+          <div class="reviews-avg">
+            <span class="big-rating">4.8</span>
+            <span class="stars">★★★★★</span>
+            <span>Based on 28 reviews</span>
+          </div>
+          <div class="reviews-bars">
+            <div class="bar-row">
+              <span>5★</span>
+              <div class="bar">
+                <div class="fill" style="width: 80%"></div>
+              </div>
+              <span>22</span>
+            </div>
+            <div class="bar-row">
+              <span>4★</span>
+              <div class="bar">
+                <div class="fill" style="width: 15%"></div>
+              </div>
+              <span>4</span>
+            </div>
+            <div class="bar-row">
+              <span>3★</span>
+              <div class="bar">
+                <div class="fill" style="width: 5%"></div>
+              </div>
+              <span>2</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-list">
+          <div class="review-item">
+            <div class="review-head">
+              <div class="avatar">S</div>
+              <div>
+                <strong>Sana M.</strong>
+                <span class="stars">★★★★★</span>
+              </div>
+              <span class="verified-badge">✓ Verified Buyer</span>
+            </div>
+            <p>Amazing toner! My skin feels so smooth after 2 weeks. Pores look smaller and my complexion is more even.
+            </p>
+          </div>
+          <div class="review-item">
+            <div class="review-head">
+              <div class="avatar">H</div>
+              <div>
+                <strong>Hira K.</strong>
+                <span class="stars">★★★★★</span>
+              </div>
+              <span class="verified-badge">✓ Verified Buyer</span>
+            </div>
+            <p>Perfect for oily skin. Doesn't dry out my face. Already ordered my second bottle!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⭐ RELATED PRODUCTS -->
+  <section class="related-products section">
+    <div class="container">
+      <div class="section-head">
+        <h2>You May Also Like</h2>
+        <p>Complete your skincare routine</p>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card" data-price="1317" data-name="Hydrating Cleanser">
+          <div class="card-media">
+            <span class="badge sale">-15%</span>
+            <a href="product.html">
+              <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&q=80"
+                alt="Hydrating Cleanser" />
+            </a>
+            <button class="quick-add add-cart" data-name="Hydrating Cleanser">Quick Add</button>
+          </div>
+          <div class="card-info">
+            <div class="rating">★ 5.0 <span>(88)</span></div>
+            <h3><a href="product.html">Hydrating Cleanser</a></h3>
+            <p class="price"><span class="new">Rs. 1,317</span> <span class="old">Rs. 1,550</span></p>
+            <button class="btn btn-primary add-cart" data-name="Hydrating Cleanser">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-price="1870" data-name="Brightening Serum">
+          <div class="card-media">
+            <span class="badge sale">-15%</span>
+            <a href="product.html">
+              <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80"
+                alt="Brightening Serum" />
+            </a>
+            <button class="quick-add add-cart" data-name="Brightening Serum">Quick Add</button>
+          </div>
+          <div class="card-info">
+            <div class="rating">★ 4.9 <span>(78)</span></div>
+            <h3><a href="product.html">Brightening Serum</a></h3>
+            <p class="price"><span class="new">Rs. 1,870</span> <span class="old">Rs. 2,200</span></p>
+            <button class="btn btn-primary add-cart" data-name="Brightening Serum">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-price="1020" data-name="Barrier Repair Moisturizer">
+          <div class="card-media">
+            <span class="badge sale">-15%</span>
+            <a href="product.html">
+              <img src="https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?w=500&q=80"
+                alt="Barrier Repair Moisturizer" />
+            </a>
+            <button class="quick-add add-cart" data-name="Barrier Repair Moisturizer">Quick Add</button>
+          </div>
+          <div class="card-info">
+            <div class="rating">★ 4.9 <span>(55)</span></div>
+            <h3><a href="product.html">Barrier Repair Moisturizer</a></h3>
+            <p class="price"><span class="new">Rs. 1,020</span> <span class="old">Rs. 1,200</span></p>
+            <button class="btn btn-primary add-cart" data-name="Barrier Repair Moisturizer">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-price="1657" data-name="Tinted Sunscreen SPF 60">
+          <div class="card-media">
+            <span class="badge sale">-15%</span>
+            <a href="product.html">
+              <img src="https://images.unsplash.com/photo-1556228852-80b6e5eeff06?w=500&q=80" alt="Tinted Sunscreen" />
+            </a>
+            <button class="quick-add add-cart" data-name="Tinted Sunscreen SPF 60">Quick Add</button>
+          </div>
+          <div class="card-info">
+            <div class="rating">★ 4.8 <span>(61)</span></div>
+            <h3><a href="product.html">Tinted Sunscreen SPF 60</a></h3>
+            <p class="price"><span class="new">Rs. 1,657</span> <span class="old">Rs. 1,950</span></p>
+            <button class="btn btn-primary add-cart" data-name="Tinted Sunscreen SPF 60">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container newsletter-inner">
+      <h2>Get 10% Off Your First Order</h2>
+      <p>Join our skincare community for tips, exclusive offers, and new launches.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn btn-dark">Subscribe →</button>
+      </form>
+      <p class="newsletter-msg" id="newsletterMsg"></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-logo">Blissful</h3>
+        <p>Glow Naturally, Shine Blissfully.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="products.html">All Products</a>
+        <a href="cleansers.html">Cleansers</a>
+        <a href="toners.html">Toners</a>
+        <a href="serums.html">Serums</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">FAQs</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:hello@blissful.com">📧 blissfulbeautypakistan@gmail.com
+        </a>
+        <a href="tel:+92300000000">📞 +92 333 1371383
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="payments">
+          <i class="fa-solid fa-money-bill-wave"></i> COD
+          <i class="fa-solid fa-mobile-screen"></i> JazzCash
+          <i class="fa-solid fa-mobile-screen"></i> Easypaisa
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+        </div>
+        <p>© 2026 Blissful Beauty. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/92300000000" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">Added to cart ✓</div>
+
+  <script src="script.js"></script>
+  <script src="product.js"></script>
+</body>
+
+</html>

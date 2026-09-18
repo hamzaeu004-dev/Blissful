@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — Blissful Beauty</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cart.css" />
+  <link rel="stylesheet" href="checkout.css" />
+</head>
+
+<body>
+
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <span>🎁 Free Shipping on Orders Above Rs. 2,000</span>
+      <span>•</span>
+      <span>💵 COD Available All Over Pakistan</span>
+      <span>•</span>
+      <span>🔒 Secure Checkout</span>
+      <span>•</span>
+      <span>🎁 Free Shipping on Orders Above Rs. 2,000</span>
+      <span>•</span>
+      <span>💵 COD Available All Over Pakistan</span>
+      <span>•</span>
+      <span>🔒 Secure Checkout</span>
+    </div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Blissful</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop All</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <div class="nav-icons">
+        <button class="icon-btn search-trigger" aria-label="Search"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn user-trigger" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+        <a href="cart.html" class="icon-btn cart-btn">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- STEP INDICATOR -->
+  <div class="step-bar">
+    <div class="container step-bar-inner">
+      <div class="step completed">
+        <span class="step-num"><i class="fa-solid fa-check"></i></span>
+        <span class="step-label">Cart</span>
+      </div>
+      <div class="step-line completed"></div>
+      <div class="step active">
+        <span class="step-num">2</span>
+        <span class="step-label">Checkout</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <span class="step-label">Confirmation</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKOUT SECTION -->
+  <section class="checkout-section">
+    <div class="container">
+
+      <div class="checkout-head">
+        <h1>Checkout</h1>
+        <p>Complete your details to place your order</p>
+      </div>
+
+      <div class="checkout-layout">
+
+        <!-- LEFT: FORM -->
+        <div class="checkout-form-wrap">
+
+          <!-- CONTACT DETAILS -->
+          <div class="form-card">
+            <div class="form-card-head">
+              <span class="form-step">1</span>
+              <h2>Contact Details</h2>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" placeholder="Ayesha" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" placeholder="Khan" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" placeholder="you@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" placeholder="+92 300 000 0000" required />
+              </div>
+            </div>
+          </div>
+
+          <!-- DELIVERY ADDRESS -->
+          <div class="form-card">
+            <div class="form-card-head">
+              <span class="form-step">2</span>
+              <h2>Delivery Address</h2>
+            </div>
+            <div class="form-grid">
+              <div class="form-group full">
+                <label for="address">Street Address *</label>
+                <input type="text" id="address" placeholder="House #, Street, Area" required />
+              </div>
+              <div class="form-group">
+                <label for="city">City *</label>
+                <input type="text" id="city" placeholder="Karachi" required />
+              </div>
+              <div class="form-group">
+                <label for="province">Province *</label>
+                <select id="province" required>
+                  <option value="">Select province</option>
+                  <option>Sindh</option>
+                  <option>Punjab</option>
+                  <option>Khyber Pakhtunkhwa</option>
+                  <option>Balochistan</option>
+                  <option>Islamabad Capital Territory</option>
+                  <option>Gilgit-Baltistan</option>
+                  <option>Azad Kashmir</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="postal">Postal Code</label>
+                <input type="text" id="postal" placeholder="75500" />
+              </div>
+              <div class="form-group full">
+                <label for="notes">Delivery Notes (optional)</label>
+                <textarea id="notes" rows="3" placeholder="Any special instructions for delivery..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAYMENT METHOD -->
+          <div class="form-card">
+            <div class="form-card-head">
+              <span class="form-step">3</span>
+              <h2>Payment Method</h2>
+            </div>
+
+            <div class="payment-options">
+
+              <label class="payment-option active">
+                <input type="radio" name="payment" value="cod" checked />
+                <div class="payment-option-body">
+                  <i class="fa-solid fa-money-bill-wave"></i>
+                  <div>
+                    <strong>Cash on Delivery (COD)</strong>
+                    <span>Pay when your order arrives</span>
+                  </div>
+                </div>
+              </label>
+
+              <label class="payment-option">
+                <input type="radio" name="payment" value="jazzcash" />
+                <div class="payment-option-body">
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  <div>
+                    <strong>JazzCash / Easypaisa</strong>
+                    <span>Mobile wallet transfer</span>
+                  </div>
+                </div>
+              </label>
+
+              <label class="payment-option">
+                <input type="radio" name="payment" value="card" />
+                <div class="payment-option-body">
+                  <i class="fa-brands fa-cc-visa"></i>
+                  <div>
+                    <strong>Credit / Debit Card</strong>
+                    <span>Visa, Mastercard accepted</span>
+                  </div>
+                </div>
+              </label>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: ORDER SUMMARY -->
+        <div class="checkout-summary">
+          <h3>Order Summary</h3>
+
+          <div id="checkoutItems" class="checkout-items"><!-- JS fills --></div>
+
+          <div class="summary-divider"></div>
+
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="coSubtotal">Rs. 0</span>
+          </div>
+          <div class="summary-row" id="coDiscountRow" style="display:none;">
+            <span>Discount</span>
+            <span id="coDiscount">-Rs. 0</span>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span id="coShipping">Free</span>
+          </div>
+
+          <div class="summary-divider"></div>
+
+          <div class="summary-row total">
+            <span>Total</span>
+            <span id="coTotal">Rs. 0</span>
+          </div>
+
+          <div class="checkout-trust">
+            <div><i class="fa-solid fa-shield-halved"></i> 100% Secure</div>
+            <div><i class="fa-solid fa-truck-fast"></i> Fast Delivery</div>
+            <div><i class="fa-solid fa-rotate-left"></i> 7-Day Returns</div>
+          </div>
+
+          <button class="btn btn-primary btn-place-order" id="placeOrder">
+            <i class="fa-solid fa-lock"></i> Place Order
+          </button>
+
+          <a href="cart.html" class="back-to-cart">
+            <i class="fa-solid fa-arrow-left"></i> Back to Cart
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-logo">Blissful</h3>
+        <p>Glow Naturally, Shine Blissfully.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="products.html">All Products</a>
+        <a href="cleansers.html">Cleansers</a>
+        <a href="toners.html">Toners</a>
+        <a href="serums.html">Serums</a>
+        <a href="moisturizers.html">Moisturizers</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">FAQs</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:hello@blissful.com">📧 blissfulbeautypakistan@gmail.com
+        </a>
+        <a href="tel:+92300000000">📞 +92 333 1371383
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Blissful Beauty. All rights reserved. | Privacy | Terms | Refund Policy</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SUCCESS MODAL -->
+  <div class="success-modal" id="successModal">
+    <div class="success-box">
+      <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+      <h2>Order Placed!</h2>
+      <p>Thank you for shopping with Blissful Beauty. Your order has been confirmed.</p>
+      <div class="success-details">
+        <div><span>Order #</span><strong id="orderNumber">BSF-000000</strong></div>
+        <div><span>Total</span><strong id="orderTotal">Rs. 0</strong></div>
+        <div><span>Payment</span><strong id="orderPayment">Cash on Delivery</strong></div>
+      </div>
+      <p class="success-note">A confirmation email & SMS has been sent with your order details.</p>
+      <a href="index.html" class="btn btn-primary">Continue Shopping</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="checkout.js"></script>
+</body>
+
+</html>

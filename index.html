@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blissful Beauty — Glow Naturally, Shine Blissfully</title>
+  <meta name="description"
+    content="Clean, effective skincare made with natural ingredients. Trusted by thousands across Pakistan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== ANNOUNCEMENT BAR ===== -->
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <span>🎁 Free Shipping on Orders Above Rs. 2,000</span>
+      <span>•</span>
+      <span>💵 COD Available All Over Pakistan</span>
+      <span>•</span>
+      <span>☪️ 100% Halal Certified</span>
+      <span>•</span>
+      <span>🎁 Free Shipping on Orders Above Rs. 2,000</span>
+      <span>•</span>
+      <span>💵 COD Available All Over Pakistan</span>
+      <span>•</span>
+      <span>☪️ 100% Halal Certified</span>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Blissful</a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Shop All</a>
+
+        <!-- SHOP BY CATEGORY -->
+        <div class="nav-dropdown">
+          <a href="products.html" class="dropdown-trigger">
+            Shop By Category <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="cleansers.html"><i class="fa-solid fa-soap"></i> Cleansers</a>
+            <a href="toners.html"><i class="fa-solid fa-droplet"></i> Toners</a>
+            <a href="serums.html"><i class="fa-solid fa-flask"></i> Serums</a>
+            <a href="moisturizers.html"><i class="fa-solid fa-jar"></i> Moisturizers</a>
+            <a href="sunscreens.html"><i class="fa-solid fa-sun"></i> Sunscreens</a>
+            <a href="bundles.html"><i class="fa-solid fa-gift"></i> Bundles</a>
+          </div>
+        </div>
+
+        <!-- SHOP BY SKIN CONCERN -->
+        <div class="nav-dropdown">
+          <a href="#" class="dropdown-trigger">
+            Shop By Skin Concern <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu concern-menu">
+            <a href="dehydration.html">Dehydration & Dryness</a>
+            <a href="dullness.html">Dullness & Uneven Tone</a>
+            <a href="breakouts.html">Breakouts & Acne</a>
+            <a href="texture.html">Texture, Pores & Oily Skin</a>
+            <a href="dark-spots.html">Dark Spot & Discoloration</a>
+            <a href="aging.html">Healthy Aging</a>
+            <a href="makeup-removing.html">Make Up Removing & Deep Cleaning</a>
+            <a href="sun-protection.html">Sun Protection</a>
+          </div>
+        </div>
+
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="nav-icons">
+        <button class="icon-btn search-trigger" aria-label="Search"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn user-trigger" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+        <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="hero-tag"> Clean Beauty, Real Results</p>
+        <h1>Glow Naturally,<br /><em>Shine Blissfully</em></h1>
+        <p class="hero-sub">
+          Clean, effective skincare made with natural ingredients — trusted by thousands across Pakistan.
+        </p>
+
+        <div class="hero-cta">
+          <a href="products.html" class="btn btn-primary">Shop Bestsellers</a>
+          <a href="#routine" class="btn btn-outline">Build Your Routine</a>
+        </div>
+
+        <div class="hero-rating">
+          <span class="stars">★★★★★</span>
+          <span>4.9/5 from 2,000+ happy customers</span>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-blob"></div>
+        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80"
+          alt="Glowing skin skincare products" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <i class="fa-solid fa-leaf"></i>
+        <p>100% Natural</p>
+      </div>
+      <div class="trust-item">
+        <i class="fa-solid fa-flask"></i>
+        <p>Dermatologist Tested</p>
+      </div>
+      <div class="trust-item">
+        <i class="fa-solid fa-star-and-crescent"></i>
+        <p>Halal Certified</p>
+      </div>
+      <div class="trust-item">
+        <i class="fa-solid fa-shield-halved"></i>
+        <p>Cruelty Free</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BUILD YOUR ROUTINE ===== -->
+  <section class="routine section" id="routine">
+    <div class="container">
+      <div class="section-head">
+        <h2>Build Your Glow Routine</h2>
+        <p>3 simple steps for healthy, radiant skin</p>
+      </div>
+
+      <div class="routine-grid">
+        <div class="routine-card">
+          <span class="step-num">01</span>
+          <div class="routine-img">
+            <a href="product.html">
+              <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500&q=80" alt="Cleanser" />
+            </a>
+          </div>
+          <h3>Cleanse</h3>
+          <p class="product-name"><a href="product.html">Vitamin C Hydrating Cleanser</a></p>
+          <p class="price">Rs. 1,850</p>
+          <button class="btn btn-primary add-cart" data-name="Vitamin C Hydrating Cleanser">Add to Cart</button>
+        </div>
+
+        <div class="routine-card">
+          <span class="step-num">02</span>
+          <div class="routine-img">
+            <a href="product.html">
+              <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500&q=80" alt="Moisturizer" />
+            </a>
+          </div>
+          <h3>Hydrate</h3>
+          <p class="product-name"><a href="product.html">Barrier Skin Moisturizer</a></p>
+          <p class="price">Rs. 2,200</p>
+          <button class="btn btn-primary add-cart" data-name="Barrier Skin Moisturizer">Add to Cart</button>
+        </div>
+
+        <div class="routine-card">
+          <span class="step-num">03</span>
+          <div class="routine-img">
+            <a href="product.html">
+              <img src="https://images.unsplash.com/photo-1556228852-80b6e5eeff06?w=500&q=80" alt="Sunscreen" />
+            </a>
+          </div>
+          <h3>Protect</h3>
+          <p class="product-name"><a href="product.html">Tinted Sunscreen SPF 60</a></p>
+          <p class="price">Rs. 1,950</p>
+          <button class="btn btn-primary add-cart" data-name="Tinted Sunscreen SPF 60">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="routine-cta">
+        <a href="bundles.html" class="btn btn-dark">Shop Full Routine — Save 15%</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BEST SELLERS ===== -->
+  <section class="bestsellers section" id="bestsellers">
+    <div class="container">
+      <div class="section-head">
+        <h2>Our Best Sellers</h2>
+        <p>Enhance your glow with only the best</p>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card" data-name="Barrier Skin Moisturizer" data-price="2200">
+          <span class="badge">Bestseller</span>
+          <button class="wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+          <div class="product-img">
+            <a href="product.html">
+              <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500&q=80"
+                alt="Barrier Skin Moisturizer" />
+            </a>
+          </div>
+          <div class="product-info">
+            <div class="rating">★ 4.9 <span>(320)</span></div>
+            <h3><a href="product.html">Barrier Skin Moisturizer</a></h3>
+            <p class="price">Rs. 2,200</p>
+            <button class="btn btn-primary add-cart" data-name="Barrier Skin Moisturizer">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Tinted Sunscreen SPF 60" data-price="1950">
+          <span class="badge">Bestseller</span>
+          <button class="wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+          <div class="product-img">
+            <a href="product.html">
+              <img src="https://images.unsplash.com/photo-1556228852-80b6e5eeff06?w=500&q=80" alt="Tinted Sunscreen" />
+            </a>
+          </div>
+          <div class="product-info">
+            <div class="rating">★ 4.8 <span>(280)</span></div>
+            <h3><a href="product.html">Tinted Sunscreen SPF 60</a></h3>
+            <p class="price">Rs. 1,950</p>
+            <button class="btn btn-primary add-cart" data-name="Tinted Sunscreen SPF 60">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Brightening Serum" data-price="2400">
+          <span class="badge">New</span>
+          <button class="wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+          <div class="product-img">
+            <a href="product.html">
+              <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80"
+                alt="Brightening Serum" />
+            </a>
+          </div>
+          <div class="product-info">
+            <div class="rating">★ 5.0 <span>(190)</span></div>
+            <h3><a href="product.html">Brightening Serum</a></h3>
+            <p class="price">Rs. 2,400</p>
+            <button class="btn btn-primary add-cart" data-name="Brightening Serum">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="Vitamin C Hydrating Cleanser" data-price="1850">
+          <span class="badge">Bestseller</span>
+          <button class="wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+          <div class="product-img">
+            <a href="product.html">
+              <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500&q=80"
+                alt="Vitamin C Cleanser" />
+            </a>
+          </div>
+          <div class="product-info">
+            <div class="rating">★ 4.9 <span>(410)</span></div>
+            <h3><a href="product.html">Vitamin C Hydrating Cleanser</a></h3>
+            <p class="price">Rs. 1,850</p>
+            <button class="btn btn-primary add-cart" data-name="Vitamin C Hydrating Cleanser">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="routine-cta">
+        <a href="products.html" class="btn btn-outline">View All Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BUNDLES ===== -->
+  <section class="bundles section" id="bundles">
+    <div class="container">
+      <div class="section-head">
+        <h2>Get More, Pay Less</h2>
+        <p>Curated bundles for every skin concern</p>
+      </div>
+
+      <div class="bundles-grid">
+        <div class="bundle-card">
+          <div class="bundle-img">
+            <a href="product.html">
+              <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=600&q=80"
+                alt="Glow Starter Kit" />
+            </a>
+          </div>
+          <h3><a href="product.html">Glow Starter Kit</a></h3>
+          <p class="bundle-desc">Cleanser + Moisturizer + Sunscreen</p>
+          <p class="price"><span class="old">Rs. 6,000</span> Rs. 5,200</p>
+          <p class="save">Save 13%</p>
+          <button class="btn btn-primary add-cart" data-name="Glow Starter Kit">Shop Bundle</button>
+        </div>
+
+        <div class="bundle-card featured">
+          <span class="badge-popular">Most Popular</span>
+          <div class="bundle-img">
+            <a href="product.html">
+              <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=80"
+                alt="Acne Care Bundle" />
+            </a>
+          </div>
+          <h3><a href="product.html">Acne Care Bundle</a></h3>
+          <p class="bundle-desc">Serum + Cleanser + Moisturizer</p>
+          <p class="price"><span class="old">Rs. 5,700</span> Rs. 4,800</p>
+          <p class="save">Save 16%</p>
+          <button class="btn btn-primary add-cart" data-name="Acne Care Bundle">Shop Bundle</button>
+        </div>
+
+        <div class="bundle-card">
+          <div class="bundle-img">
+            <a href="product.html">
+              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&q=80" alt="Bride Glow Kit" />
+            </a>
+          </div>
+          <h3><a href="product.html">Bride-to-Be Glow Kit</a></h3>
+          <p class="bundle-desc">Full 5-step routine</p>
+          <p class="price"><span class="old">Rs. 10,000</span> Rs. 8,500</p>
+          <p class="save">Save 15%</p>
+          <button class="btn btn-primary add-cart" data-name="Bride-to-Be Glow Kit">Shop Bundle</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / WHY BLISSFUL ===== -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=700&q=80" alt="Natural ingredients" />
+      </div>
+      <div class="about-text">
+        <h2>Why Blissful?</h2>
+        <p>We believe skincare should be simple, safe, and effective. Every product is crafted with natural, skin-loving
+          ingredients — free from harsh chemicals.</p>
+
+        <ul class="about-list">
+          <li><i class="fa-solid fa-check"></i> Made with natural, skin-loving ingredients</li>
+          <li><i class="fa-solid fa-check"></i> Free from harsh chemicals & parabens</li>
+          <li><i class="fa-solid fa-check"></i> Halal & cruelty-free</li>
+          <li><i class="fa-solid fa-check"></i> Tested on real skin, not animals</li>
+        </ul>
+
+        <a href="about.html" class="btn btn-dark">Read Our Story →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-head">
+        <h2>The Blissful Journey</h2>
+        <p>Real stories from real customers</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"I love how light and hydrating the moisturizer is. It doesn't clog my pores, and my skin feels good all
+            day. JazakAllah for amazing product!"</p>
+          <div class="reviewer">
+            <div class="avatar">A</div>
+            <div>
+              <strong>Aisha Khan</strong>
+              <span>✓ Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The face wash is the best product I've ever used. It cleanses deeply without drying out my skin. My family
+            is hooked too!"</p>
+          <div class="reviewer">
+            <div class="avatar">N</div>
+            <div>
+              <strong>Neha Rana</strong>
+              <span>✓ Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The natural ingredients are what drew me to this brand, and I'm so glad I tried it. My acne scars have
+            faded significantly, Alhamdulillah."</p>
+          <div class="reviewer">
+            <div class="avatar">M</div>
+            <div>
+              <strong>Maryam Salman</strong>
+              <span>✓ Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter">
+    <div class="container newsletter-inner">
+      <h2>Get 10% Off Your First Order</h2>
+      <p>Join our skincare community for tips, exclusive offers, and new launches.</p>
+
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn btn-dark">Subscribe →</button>
+      </form>
+      <p class="newsletter-msg" id="newsletterMsg"></p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-logo">Blissful</h3>
+        <p>Glow Naturally, Shine Blissfully.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <a href="products.html">Bestsellers</a>
+        <a href="bundles.html">Bundles</a>
+        <a href="products.html">Skincare</a>
+        <a href="products.html">New Arrivals</a>
+      </div>
+
+      <div>
+        <h4>Help</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">FAQs</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:hello@blissful.com">📧 blissfulbeautypakistan@gmail.com
+        </a>
+        <a href="tel:+92300000000">📞 +92 333 1371383
+        </a>
+        <a href="#">📍 Lahore, Pakistan</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="payments">
+          <i class="fa-solid fa-money-bill-wave"></i> COD
+          <i class="fa-solid fa-mobile-screen"></i> JazzCash
+          <i class="fa-solid fa-mobile-screen"></i> Easypaisa
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+        </div>
+        <p>© 2026 Blissful Beauty. All rights reserved. | Privacy | Terms | Refund Policy</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+  <a href="https://wa.me/92300000000" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== CART TOAST ===== -->
+  <div class="toast" id="toast">Added to cart ✓</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

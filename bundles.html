@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bundles — Save More, Glow More | Blissful Beauty</title>
+  <meta name="description"
+    content="Curated skincare bundles for every concern. Save up to 16% on complete routines. Flat 15% OFF + Free shipping above Rs. 2,000." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="collection.css" />
+</head>
+
+<body>
+
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <span>🎁 Free Shipping on Orders Above Rs. 2,000</span>
+      <span>•</span>
+      <span>💵 COD Available All Over Pakistan</span>
+      <span>•</span>
+      <span>🔥 FLAT 15% OFF — Limited Time</span>
+      <span>•</span>
+      <span>🎁 Free Shipping on Orders Above Rs. 2,000</span>
+      <span>•</span>
+      <span>💵 COD Available All Over Pakistan</span>
+      <span>•</span>
+      <span>🔥 FLAT 15% OFF — Limited Time</span>
+    </div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Blissful</a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop All</a>
+
+        <!-- SHOP BY CATEGORY -->
+        <div class="nav-dropdown">
+          <a href="products.html" class="dropdown-trigger">
+            Shop By Category <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="cleansers.html"><i class="fa-solid fa-soap"></i> Cleansers</a>
+            <a href="toners.html"><i class="fa-solid fa-droplet"></i> Toners</a>
+            <a href="serums.html"><i class="fa-solid fa-flask"></i> Serums</a>
+            <a href="moisturizers.html"><i class="fa-solid fa-jar"></i> Moisturizers</a>
+            <a href="sunscreens.html"><i class="fa-solid fa-sun"></i> Sunscreens</a>
+            <a href="bundles.html"><i class="fa-solid fa-gift"></i> Bundles</a>
+          </div>
+        </div>
+
+        <!-- SHOP BY SKIN CONCERN -->
+        <div class="nav-dropdown">
+          <a href="#" class="dropdown-trigger">
+            Shop By Skin Concern <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu concern-menu">
+            <a href="dehydration.html">Dehydration & Dryness</a>
+            <a href="dullness.html">Dullness & Uneven Tone</a>
+            <a href="breakouts.html">Breakouts & Acne</a>
+            <a href="texture.html">Texture, Pores & Oily Skin</a>
+            <a href="dark-spots.html">Dark Spot & Discoloration</a>
+            <a href="aging.html">Healthy Aging</a>
+            <a href="makeup-removing.html">Make Up Removing & Deep Cleaning</a>
+            <a href="sun-protection.html">Sun Protection</a>
+          </div>
+        </div>
+
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="nav-icons">
+        <button class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn"><i class="fa-regular fa-user"></i></button>
+        <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <a href="products.html">Shop</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span>Bundles</span>
+    </div>
+  </div>
+
+  <section class="category-hero">
+    <div class="container category-hero-grid">
+      <div class="category-hero-text">
+        <p class="category-tag">🎁 Save More, Glow More</p>
+        <h1>Bundles</h1>
+        <p class="category-sub">
+          Curated skincare routines for every concern. Get complete regimens at a discounted price — perfect for
+          beginners and skincare lovers alike.
+        </p>
+        <div class="category-stats">
+          <span><strong>3</strong> Bundles</span>
+          <span>•</span>
+          <span>Save up to <strong>16%</strong></span>
+        </div>
+      </div>
+      <div class="category-hero-img">
+        <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=700&q=80" alt="Bundles" />
+      </div>
+    </div>
+  </section>
+
+  <section class="category-info">
+    <div class="container info-grid">
+      <div class="info-item">
+        <i class="fa-solid fa-piggy-bank"></i>
+        <h4>Save More</h4>
+        <p>Up to 16% off vs buying separately</p>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-list-check"></i>
+        <h4>Complete Routine</h4>
+        <p>Everything you need in one box</p>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-gift"></i>
+        <h4>Perfect Gift</h4>
+        <p>Beautifully packaged for gifting</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="collection-section">
+    <div class="container">
+      <div class="toolbar">
+        <p class="results-count" id="resultsCount">Showing 3 bundles</p>
+        <div class="sort-wrap">
+          <label>Sort by:</label>
+          <select id="sortSelect">
+            <option value="best-selling">Best Selling</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="name-az">Name: A-Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <div class="product-card" data-cat="bundle" data-concern="brightening" data-price="3400"
+          data-name="Bright and Glowing Skin Bundle" data-stock="true">
+          <div class="card-media">
+            <span class="badge sale">-15%</span>
+            <span class="badge bundle-tag">BUNDLE</span>
+            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&q=80"
+              alt="Bright and Glowing Skin Bundle" />
+            <button class="quick-add add-cart" data-name="Bright and Glowing Skin Bundle">Quick Add</button>
+          </div>
+          <div class="card-info">
+            <div class="rating">★ 5.0 <span>(33 reviews)</span></div>
+            <h3>Bright & Glowing Skin Bundle</h3>
+            <p class="desc">Vitamin C Serum + Sunscreen — your daily radiance duo.</p>
+            <div class="tags">
+              <span class="tag">2 Products</span>
+              <span class="tag">Brightening</span>
+            </div>
+            <p class="price"><span class="new">Rs. 3,400</span> <span class="old">Rs. 4,000</span></p>
+            <button class="btn btn-primary add-cart" data-name="Bright & Glowing Skin Bundle">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="bundle" data-concern="acne" data-price="3867"
+          data-name="Teenage Skincare Bundle" data-stock="true">
+          <div class="card-media">
+            <span class="badge sale">-15%</span>
+            <span class="badge bundle-tag">BUNDLE</span>
+            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=500&q=80"
+              alt="Teenage Skincare Bundle" />
+            <button class="quick-add add-cart" data-name="Teenage Skincare Bundle">Quick Add</button>
+          </div>
+          <div class="card-info">
+            <div class="rating">★ 4.8 <span>(22 reviews)</span></div>
+            <h3>Teenage Skincare Bundle</h3>
+            <p class="desc">Cleanser + Moisturizer + Sunscreen — perfect starter routine.</p>
+            <div class="tags">
+              <span class="tag">3 Products</span>
+              <span class="tag">Beginners</span>
+            </div>
+            <p class="price"><span class="new">Rs. 3,867</span> <span class="old">Rs. 4,550</span></p>
+            <button class="btn btn-primary add-cart" data-name="Teenage Skincare Bundle">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card sold-out" data-cat="bundle" data-concern="hydration" data-price="6460"
+          data-name="Hydrated and Plump Skin Bundle" data-stock="false">
+          <div class="card-media">
+            <span class="badge sale">-15%</span>
+            <span class="badge bundle-tag">BUNDLE</span>
+            <span class="badge soldout-badge">SOLD OUT</span>
+            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500&q=80"
+              alt="Hydrated and Plump Skin Bundle" />
+          </div>
+          <div class="card-info">
+            <div class="rating">★ 5.0 <span>(19 reviews)</span></div>
+            <h3>Hydrated & Plump Skin Bundle</h3>
+            <p class="desc">Complete hydration routine for dry & dehydrated skin.</p>
+            <div class="tags">
+              <span class="tag">5 Products</span>
+              <span class="tag">Hydration</span>
+            </div>
+            <p class="price"><span class="new">Rs. 6,460</span> <span class="old">Rs. 7,600</span></p>
+            <button class="btn btn-outline notify-btn" data-name="Hydrated & Plump Skin Bundle">Notify Me</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="empty-state" id="emptyState" style="display:none;">
+        <i class="fa-solid fa-gift"></i>
+        <h3>No bundles found</h3>
+        <p>This category will be stocked soon. Check back later!</p>
+        <a href="products.html" class="btn btn-dark">Browse All Products</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cross-sell section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Shop Individual Products</h2>
+        <p>Build your own custom routine</p>
+      </div>
+      <div class="cross-grid">
+        <a href="cleansers.html" class="cross-card">
+          <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=300&q=80" alt="Cleansers" />
+          <h4>Cleansers</h4>
+          <span>Shop Now →</span>
+        </a>
+        <a href="toners.html" class="cross-card">
+          <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=300&q=80" alt="Toners" />
+          <h4>Toners</h4>
+          <span>Shop Now →</span>
+        </a>
+        <a href="serums.html" class="cross-card">
+          <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=300&q=80" alt="Serums" />
+          <h4>Serums</h4>
+          <span>Shop Now →</span>
+        </a>
+        <a href="moisturizers.html" class="cross-card">
+          <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=300&q=80" alt="Moisturizers" />
+          <h4>Moisturizers</h4>
+          <span>Shop Now →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container newsletter-inner">
+      <h2>Get 10% Off Your First Order</h2>
+      <p>Join our skincare community for tips, exclusive offers, and new launches.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn btn-dark">Subscribe →</button>
+      </form>
+      <p class="newsletter-msg" id="newsletterMsg"></p>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-logo">Blissful</h3>
+        <p>Glow Naturally, Shine Blissfully.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="products.html">All Products</a>
+        <a href="cleansers.html">Cleansers</a>
+        <a href="toners.html">Toners</a>
+        <a href="serums.html">Serums</a>
+        <a href="moisturizers.html">Moisturizers</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">FAQs</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:hello@blissful.com">📧 blissfulbeautypakistan@gmail.com
+        </a>
+        <a href="tel:+92300000000">📞 +92 333 1371383
+        </a>
+        <a href="#">📍 Lahore, Pakistan</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="payments">
+          <i class="fa-solid fa-money-bill-wave"></i> COD
+          <i class="fa-solid fa-mobile-screen"></i> JazzCash
+          <i class="fa-solid fa-mobile-screen"></i> Easypaisa
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+        </div>
+        <p>© 2026 Blissful Beauty. All rights reserved. | Privacy | Terms | Refund Policy</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/92300000000" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <div class="toast" id="toast">Added to cart ✓</div>
+
+  <script src="script.js"></script>
+  <script src="collection.js"></script>
+</body>
+
+</html>

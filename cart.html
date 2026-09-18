@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart — Blissful Beauty</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cart.css" />
+</head>
+
+<body>
+
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <span>🎁 Free Shipping on Orders Above Rs. 2,000</span>
+      <span>•</span>
+      <span>💵 COD Available All Over Pakistan</span>
+      <span>•</span>
+      <span>🔥 FLAT 15% OFF — Limited Time</span>
+      <span>•</span>
+      <span>🎁 Free Shipping on Orders Above Rs. 2,000</span>
+      <span>•</span>
+      <span>💵 COD Available All Over Pakistan</span>
+      <span>•</span>
+      <span>🔥 FLAT 15% OFF — Limited Time</span>
+    </div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Blissful</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop All</a>
+        <!-- SHOP BY CATEGORY -->
+        <div class="nav-dropdown">
+          <a href="products.html" class="dropdown-trigger">
+            Shop By Category <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="cleansers.html"><i class="fa-solid fa-soap"></i> Cleansers</a>
+            <a href="toners.html"><i class="fa-solid fa-droplet"></i> Toners</a>
+            <a href="serums.html"><i class="fa-solid fa-flask"></i> Serums</a>
+            <a href="moisturizers.html"><i class="fa-solid fa-jar"></i> Moisturizers</a>
+            <a href="sunscreens.html"><i class="fa-solid fa-sun"></i> Sunscreens</a>
+            <a href="bundles.html"><i class="fa-solid fa-gift"></i> Bundles</a>
+          </div>
+        </div>
+        <!-- SHOP BY SKIN CONCERN -->
+        <div class="nav-dropdown">
+          <a href="#" class="dropdown-trigger">
+            Shop By Skin Concern <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu concern-menu">
+            <a href="dehydration.html">Dehydration & Dryness</a>
+            <a href="dullness.html">Dullness & Uneven Tone</a>
+            <a href="breakouts.html">Breakouts & Acne</a>
+            <a href="texture.html">Texture, Pores & Oily Skin</a>
+            <a href="dark-spots.html">Dark Spot & Discoloration</a>
+            <a href="aging.html">Healthy Aging</a>
+            <a href="makeup-removing.html">Make Up Removing & Deep Cleaning</a>
+            <a href="sun-protection.html">Sun Protection</a>
+          </div>
+        </div>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <div class="nav-icons">
+        <button class="icon-btn search-trigger" aria-label="Search"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn user-trigger" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+        <a href="cart.html" class="icon-btn cart-btn">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span>Shopping Cart</span>
+    </div>
+  </div>
+
+  <!-- STEP INDICATOR -->
+  <div class="step-bar">
+    <div class="container step-bar-inner">
+      <div class="step active">
+        <span class="step-num">1</span>
+        <span class="step-label">Cart</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <span class="step-label">Checkout</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <span class="step-label">Confirmation</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CART SECTION -->
+  <section class="cart-section">
+    <div class="container">
+
+      <div class="cart-head">
+        <h1>Your Shopping Cart</h1>
+        <p id="cartItemCount">0 items</p>
+      </div>
+
+      <!-- EMPTY CART -->
+      <div class="cart-empty" id="cartEmpty">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h3>Your cart is empty</h3>
+        <p>Looks like you haven't added anything yet. Let's change that!</p>
+        <a href="products.html" class="btn btn-primary">Start Shopping</a>
+      </div>
+
+      <!-- CART CONTENT -->
+      <div class="cart-layout" id="cartContent" style="display: none;">
+
+        <!-- LEFT: CART ITEMS -->
+        <div class="cart-items-wrap">
+          <div class="cart-items-head">
+            <span>Product</span>
+            <span>Price</span>
+            <span>Quantity</span>
+            <span>Total</span>
+            <span></span>
+          </div>
+
+          <div id="cartItems"><!-- JS will fill this --></div>
+
+          <div class="cart-actions">
+            <a href="products.html" class="btn btn-outline">
+              <i class="fa-solid fa-arrow-left"></i> Continue Shopping
+            </a>
+            <button class="btn btn-text" id="clearCart">
+              <i class="fa-solid fa-trash"></i> Clear Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- RIGHT: ORDER SUMMARY -->
+        <div class="cart-summary">
+          <h3>Order Summary</h3>
+
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="subtotal">Rs. 0</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span id="shipping">Free</span>
+          </div>
+
+          <div class="summary-row discount" id="discountRow" style="display:none;">
+            <span>Discount</span>
+            <span id="discountAmount">-Rs. 0</span>
+          </div>
+
+          <div class="coupon-box">
+            <input type="text" id="couponInput" placeholder="Coupon code (e.g. BLISS10)" />
+            <button id="applyCoupon">Apply</button>
+          </div>
+          <p class="coupon-msg" id="couponMsg"></p>
+
+          <div class="summary-divider"></div>
+
+          <div class="summary-row total">
+            <span>Total</span>
+            <span id="total">Rs. 0</span>
+          </div>
+
+          <p class="shipping-note">
+            <i class="fa-solid fa-truck-fast"></i>
+            Free shipping on orders above Rs. 2,000
+          </p>
+
+          <a href="checkout.html" class="btn btn-primary btn-checkout">
+            Proceed to Checkout <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <div class="payment-icons-mini">
+            <span>Secure payment:</span>
+            <i class="fa-solid fa-money-bill-wave"></i>
+            <i class="fa-solid fa-mobile-screen"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-logo">Blissful</h3>
+        <p>Glow Naturally, Shine Blissfully.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="products.html">All Products</a>
+        <a href="cleansers.html">Cleansers</a>
+        <a href="toners.html">Toners</a>
+        <a href="serums.html">Serums</a>
+        <a href="moisturizers.html">Moisturizers</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">FAQs</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:hello@blissful.com">📧 blissfulbeautypakistan@gmail.com
+        </a>
+        <a href="tel:+92300000000">📞 +92 333 1371383
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Blissful Beauty. All rights reserved. | Privacy | Terms | Refund Policy</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Added to cart ✓</div>
+
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+</body>
+
+</html>
