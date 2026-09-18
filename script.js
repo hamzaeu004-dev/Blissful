@@ -15,24 +15,45 @@ if (navbar) {
   });
 }
 
-/* ===== MOBILE MENU TOGGLE ===== */
+/* ===== MOBILE MENU TOGGLE & OVERLAY ===== */
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
+let navOverlay = document.getElementById('navOverlay');
+
+if (!navOverlay) {
+  navOverlay = document.createElement('div');
+  navOverlay.id = 'navOverlay';
+  navOverlay.className = 'nav-overlay';
+  document.body.appendChild(navOverlay);
+}
+
+function closeMobileMenu() {
+  if (navLinks) navLinks.classList.remove('active');
+  if (hamburger) hamburger.classList.remove('open');
+  if (navOverlay) navOverlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
 
 if (hamburger && navLinks) {
   hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    hamburger.classList.toggle('open');
-    document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    const isActive = navLinks.classList.contains('active');
+    if (isActive) {
+      closeMobileMenu();
+    } else {
+      navLinks.classList.add('active');
+      hamburger.classList.add('open');
+      if (navOverlay) navOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
   });
 
-  // Close menu on link click
+  if (navOverlay) {
+    navOverlay.addEventListener('click', closeMobileMenu);
+  }
+
+  // Close menu on link click (except dropdown trigger)
   navLinks.querySelectorAll('a:not(.dropdown-trigger)').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
-      hamburger.classList.remove('open');
-      document.body.style.overflow = '';
-    });
+    link.addEventListener('click', closeMobileMenu);
   });
 }
 
@@ -46,7 +67,12 @@ navDropdowns.forEach(dropdown => {
     trigger.addEventListener('click', (e) => {
       if (window.innerWidth <= 768) {
         e.preventDefault();
-        dropdown.classList.toggle('open');
+        const isOpen = dropdown.classList.contains('open');
+        // Close other dropdowns
+        navDropdowns.forEach(d => {
+          if (d !== dropdown) d.classList.remove('open');
+        });
+        dropdown.classList.toggle('open', !isOpen);
       }
     });
   }
