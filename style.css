@@ -1586,6 +1586,28 @@ body.dark-mode .footer {
   color: #d6cbcf !important;
 }
 
+body.dark-mode .footer-logo,
+body.dark-mode .footer-grid h4 {
+  color: #ffffff !important;
+}
+
+body.dark-mode .footer-grid p {
+  color: #b5a9a2 !important;
+}
+
+body.dark-mode .footer-grid a {
+  color: #cbbcb3 !important;
+}
+
+body.dark-mode .footer-grid a:hover {
+  color: #e58794 !important;
+}
+
+body.dark-mode .footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.08) !important;
+  color: #a89b94 !important;
+}
+
 
 
 
