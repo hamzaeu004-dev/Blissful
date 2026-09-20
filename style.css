@@ -994,6 +994,16 @@ img {
   opacity: 1;
 }
 
+/* ===== PREVENT BODY SCROLL WHEN MOBILE MENU IS OPEN ===== */
+html.menu-open,
+body.menu-open {
+  overflow: hidden !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  touch-action: none;
+  overscroll-behavior: none;
+}
+
 /* ===== NAV OVERLAY BACKDROP ===== */
 .nav-overlay {
   position: fixed;
@@ -1008,6 +1018,8 @@ img {
   opacity: 0;
   visibility: hidden;
   z-index: 998;
+  touch-action: none;
+  overscroll-behavior: none;
   transition: opacity 0.35s ease, visibility 0.35s ease;
 }
 
@@ -1092,6 +1104,7 @@ img {
     align-items: flex-start;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
     z-index: 1001;
     transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     box-shadow: -10px 0 30px rgba(0, 0, 0, 0.18);

@@ -31,6 +31,8 @@ function closeMobileMenu() {
   if (navLinks) navLinks.classList.remove('active');
   if (hamburger) hamburger.classList.remove('open');
   if (navOverlay) navOverlay.classList.remove('active');
+  document.body.classList.remove('menu-open');
+  document.documentElement.classList.remove('menu-open');
   document.body.style.overflow = '';
 }
 
@@ -43,12 +45,17 @@ if (hamburger && navLinks) {
       navLinks.classList.add('active');
       hamburger.classList.add('open');
       if (navOverlay) navOverlay.classList.add('active');
+      document.body.classList.add('menu-open');
+      document.documentElement.classList.add('menu-open');
       document.body.style.overflow = 'hidden';
     }
   });
 
   if (navOverlay) {
     navOverlay.addEventListener('click', closeMobileMenu);
+    navOverlay.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+    }, { passive: false });
   }
 
   // Close menu on link click (except dropdown trigger)
