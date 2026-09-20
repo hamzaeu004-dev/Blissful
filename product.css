@@ -856,6 +856,11 @@
     border-radius: 50px;
     white-space: nowrap;
   }
+
+  /* Offset floating WhatsApp button on product page on mobile */
+  .whatsapp-float {
+    bottom: 75px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -878,6 +883,17 @@
     padding: 8px 14px;
     font-size: 0.8rem;
   }
+
+  .mobile-sticky-title {
+    max-width: 120px;
+    font-size: 0.8rem;
+  }
+
+  .mobile-sticky-btn {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+}
 
   .payment-icons {
     flex-wrap: wrap;

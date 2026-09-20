@@ -513,17 +513,34 @@
 }
 
 @media (max-width: 480px) {
+  .checkout-section {
+    padding: 20px 0 40px;
+  }
+
+  .form-card,
+  .checkout-summary {
+    padding: 16px 12px;
+    border-radius: 12px;
+  }
+
   .payment-option-body {
-    padding: 14px 14px;
-    gap: 12px;
+    padding: 12px 12px;
+    gap: 10px;
   }
 
   .payment-option-body i {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .summary-item-img {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  .checkout-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 0.95rem;
   }
 }

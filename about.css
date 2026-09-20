@@ -256,12 +256,34 @@
 }
 
 @media (max-width: 480px) {
+  .about-hero {
+    padding: 35px 0;
+  }
+
   .values-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .about-hero-text h1 {
-    font-size: 1.7rem;
+    font-size: 1.65rem;
+  }
+
+  .about-hero-img img,
+  .story-img img {
+    height: 240px;
+    border-radius: 16px;
+  }
+
+  .story-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .founder-quote {
+    font-size: 1rem;
+    padding: 18px 14px;
   }
 }
 

@@ -55,6 +55,12 @@ if (hamburger && navLinks) {
   navLinks.querySelectorAll('a:not(.dropdown-trigger)').forEach(link => {
     link.addEventListener('click', closeMobileMenu);
   });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      closeMobileMenu();
+    }
+  });
 }
 
 /* ===== MOBILE DROPDOWN TOGGLE ===== */

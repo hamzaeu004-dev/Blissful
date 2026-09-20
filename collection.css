@@ -526,15 +526,16 @@
   }
 
   .category-hero h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .category-hero-img img {
-    height: 260px;
+    height: 240px;
   }
 
   .collection-section .products-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
   }
 
   .cross-grid {
@@ -550,20 +551,33 @@
 @media (max-width: 768px) {
   .collection-section .products-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 10px;
   }
 
   .card-media {
-    height: 180px;
+    height: 165px;
+  }
+
+  .card-info {
+    padding: 12px 10px 14px;
   }
 
   .card-info h3 {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 6px;
   }
 
   .card-info .desc {
     display: none;
+  }
+
+  .quick-add {
+    display: none; /* Mobile users use Add to Cart button inside info */
   }
 
   .toolbar {
@@ -579,56 +593,58 @@
 
   .sort-group select {
     flex: 1;
-    max-width: 200px;
+    max-width: 220px;
+    font-size: 16px; /* iOS auto-zoom fix */
   }
 
   .category-hero {
-    padding: 35px 0;
+    padding: 30px 0;
   }
 
   .category-hero h1 {
-    font-size: clamp(1.8rem, 6vw, 2.3rem);
+    font-size: clamp(1.7rem, 6vw, 2.2rem);
   }
 
   .category-sub {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
   }
 }
 
 @media (max-width: 480px) {
   .collection-section .products-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 8px;
   }
 
   .card-media {
-    height: 155px;
+    height: 140px;
   }
 
   .card-info {
-    padding: 12px;
+    padding: 10px 8px;
   }
 
   .card-info .price {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
   }
 
   .card-info .btn {
     padding: 8px 10px;
     font-size: 0.78rem;
+    width: 100%;
   }
 
   .cross-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 8px;
   }
 
   .cross-card {
-    padding: 12px;
+    padding: 10px;
   }
 
   .cross-img {
-    height: 130px;
+    height: 120px;
   }
 }
 
